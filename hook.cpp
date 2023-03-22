@@ -56,6 +56,7 @@ bool setRandLane(std::vector<int>& lane)
         for (int i = 0; i < 7; i++)
             lane2[lane[i]] = i;
 
+        playRandLanes[0] = 0;
         for (int i = 0; i < 7; i++)
             playRandLanes[i + 1] = lane2[i] + 1;
 
